@@ -1,0 +1,17 @@
+@mixin  flex-display($direction: null, $gap: null, $justify-position: null) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;   
+    @if $justify-position != null {
+      justify-content: $justify-position;
+    }
+    @if $gap != null {
+        gap: $gap;
+    }
+}
+
+@mixin min-width($threshold) {
+    @media screen and (min-width: $threshold) {
+      @content;
+    }
+  }

@@ -1,0 +1,102 @@
+
+.pricing-heading {
+    text-align: center;
+}
+.toggle {
+    @include flex-display(row, 2.4rem);
+}
+.btn-toggle {
+    width: 6rem;
+    height: 3.2rem;
+    background: linear-gradient(to bottom right, hsl(236, 72%, 79%), hsl(238, 63%, 64%));
+    padding: 0.5rem;
+    border: 1px solid hsl(237, 63%, 64%);
+    border-radius: 2rem;
+    @include flex-display($direction: row);
+}
+.on, .off {
+    display: inline-block;
+    color: #fff;
+    background: $color-grayish-blue-1;
+    height: 2.4rem;
+    width: 2.4rem;
+    border-radius: 50%;
+}
+.off {
+    transform: translateX(25px);
+}
+.pricing-card {
+    width: 100%;
+    text-align: center;       
+    @include flex-display(column, 3.2rem);
+    
+    @include min-width(78rem) {
+        @include flex-display(row, 0);
+        .pro-card {
+            padding: 5.5rem 3.1rem;
+        }
+    }
+}
+.card {
+    width: 100%;
+    background: #fff;
+    padding: 3.1rem 2.9rem;
+    border-radius: 1rem;    
+    box-shadow: 0 1.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    stroke: #979797; 
+    @include min-width(37rem) {
+        max-width: 40rem;    
+        margin: 0 auto;    
+    }
+}
+.pro-card {
+    color: $color-grayish-blue-1;
+    background: linear-gradient(to bottom right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+.price-tag {
+    text-align: center;
+    @include flex-display($direction: row, $justify-position: center);
+}
+.dollar {
+    font-size: 4rem;
+    // display: inline-block;
+}
+.list {
+    margin-bottom: 3.2rem;
+    li {
+        font-weight: 700;
+        padding: 1.2rem 0;
+        border-top: 1px solid rgba($color: $color-text, $alpha: 0.25);
+
+        &:last-child {
+            border-bottom: 1px solid rgba($color: $color-text, $alpha: 0.25);
+        }
+    }
+    
+}
+.btn {
+    font-size: 1.3rem;
+    font-weight: 700;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 1.4rem 0;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    color: #fff;
+    background: linear-gradient(to bottom right, hsl(237, 73%, 79%), hsl(238, 63%, 64%));
+    &:hover, &:active {
+        cursor: pointer;
+        border: 1px solid hsl(237, 63%, 64%);
+        color: hsl(237, 63%, 64%);
+        background: #fff;
+    }
+}
+.pro-card .btn {
+    color: $color-grayish-blue-3;
+    background: $color-grayish-blue-1;
+    &:hover, &:active {
+        color: $color-grayish-blue-1;
+        border: 1px solid $color-grayish-blue-1;
+        background: transparent;
+    }
+}
