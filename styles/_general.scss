@@ -9,8 +9,9 @@ html {
 body {
     font-family: $primary-font;
     font-size: 1.5rem;
+    font-weight: 700;
     line-height: 1.5;
-    color: $color-text;
+    color: $color-grayish-blue-3;
     background: $color-grayish-blue-1;
     background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
     background-position: top -2rem right -20rem, bottom right -20rem;
@@ -51,10 +52,9 @@ h1 {
 h2 {
     font-size: 7.2rem;
     margin-bottom: 3.2rem;
-    color: $color-heading-text;
+    color: $color-grayish-blue-4;
 }
 h3 {
     font-size: 1.8rem;
     margin-bottom: 2.4rem;
 }
-

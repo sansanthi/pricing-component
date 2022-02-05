@@ -13,6 +13,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
+  font-weight: 700;
   line-height: 1.5;
   color: #6d708d;
   background: #f6f6fe;
@@ -97,6 +98,7 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   gap: 2.4rem;
+  color: rgba(109, 112, 141, 0.5);
 }
 
 .btn-toggle {

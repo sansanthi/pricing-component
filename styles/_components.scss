@@ -4,13 +4,14 @@
 }
 .toggle {
     @include flex-display(row, 2.4rem);
+    color: rgba($color: $color-grayish-blue-3, $alpha: 0.5);
 }
 .btn-toggle {
     width: 6rem;
     height: 3.2rem;
     background: linear-gradient(to bottom right, hsl(236, 72%, 79%), hsl(238, 63%, 64%));
     padding: 0.5rem;
-    border: 1px solid hsl(237, 63%, 64%);
+    border: 1px solid $color-blue;
     border-radius: 2rem;
     @include flex-display($direction: row);
 }
@@ -59,17 +60,16 @@
 }
 .dollar {
     font-size: 4rem;
-    // display: inline-block;
 }
 .list {
     margin-bottom: 3.2rem;
     li {
         font-weight: 700;
         padding: 1.2rem 0;
-        border-top: 1px solid rgba($color: $color-text, $alpha: 0.25);
+        border-top: 1px solid rgba($color: $color-grayish-blue-3, $alpha: 0.25);
 
         &:last-child {
-            border-bottom: 1px solid rgba($color: $color-text, $alpha: 0.25);
+            border-bottom: 1px solid rgba($color: $color-grayish-blue-3, $alpha: 0.25);
         }
     }
     
@@ -86,8 +86,8 @@
     background: linear-gradient(to bottom right, hsl(237, 73%, 79%), hsl(238, 63%, 64%));
     &:hover, &:active {
         cursor: pointer;
-        border: 1px solid hsl(237, 63%, 64%);
-        color: hsl(237, 63%, 64%);
+        border: 1px solid $color-blue;
+        color: $color-blue;
         background: #fff;
     }
 }
